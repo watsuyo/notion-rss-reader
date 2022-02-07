@@ -1,0 +1,24 @@
+name: Feed Cron
+
+on:
+  schedule:
+    - cron: "0 * * * *" # UTC
+  workflow_dispatch:
+
+jobs:
+  get-feed:
+    runs-on: ubuntu-latest
+    env:
+      NOTION_KEY: ${{ secrets.NOTION_KEY }}
+      NOTION_READER_DATABASE_ID: ${{ secrets.NOTION_READER_DATABASE_ID }}
+      NOTION_FEEDER_DATABASE_ID: ${{ secrets.NOTION_FEEDER_DATABASE_ID }}
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Update Notion Feed
+        run: |
+          curl -o bundle.cjs https://raw.githubusercontent.com/watsuyo/notion-rss-reader/bundle/dist/bundle.cjs
+          node bundle.cjs

@@ -1,0 +1,41 @@
+{
+	"name": "notion-rss",
+	"version": "0.0.0",
+	"private": false,
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"build": "node build.js",
+		"feed": "node dist/bundle.cjs",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix && npx prettier 'src/**/*.{js,ts,json}' --write",
+		"lint-staged": "lint-staged",
+		"prepare": "husky install"
+	},
+	"devDependencies": {
+		"@notionhq/client": "^0.4.13",
+		"@typescript-eslint/eslint-plugin": "^5.10.2",
+		"@typescript-eslint/parser": "^5.10.2",
+		"dotenv": "^16.0.0",
+		"esbuild": "^0.14.20",
+		"eslint": "^8.8.0",
+		"eslint-config-prettier": "^8.3.0",
+		"husky": "^7.0.4",
+		"lint-staged": "^12.3.3",
+		"ogp-parser": "^0.6.0",
+		"prettier": "^2.5.1",
+		"rss-parser": "^3.12.0",
+		"typescript": "^4.5.5"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{js,ts}": [
+			"eslint --fix",
+			"prettier --write"
+		]
+	}
+}

@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "lib": [
+      "esnext"
+    ],
+    "moduleResolution": "Node",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+    },
+    "baseUrl": "./",
+    "newLine": "lf",
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "eslint": {
+    "include": [
+      "src/**/*.ts",
+      ".eslintrc.js"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist"
+    ],
+  }
+}
