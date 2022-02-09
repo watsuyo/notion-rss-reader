@@ -1,13 +1,11 @@
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-<div id="top"></div>
+[![MIT License][license-shield]][license-url] -->
 
 <div align="center">
   <h1 align="center">Notion RSS Reader 🎁</h1>
@@ -171,7 +169,7 @@ It does not necessarily have to be the same as the author's local environment.
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
