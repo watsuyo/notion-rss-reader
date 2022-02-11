@@ -11,6 +11,7 @@
   <h1 align="center">Notion RSS Reader 🎁</h1>
 </div>
 
+`Notion RSS Reader` is a web service that combines GitHub and Notion to allow you to retrieve articles from your favorite sites for free, every hour, and store them for as long as you want!
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -39,8 +40,6 @@
 ## About The Project
 
 ![Notion RSS Reader Screen Shot](https://i.gyazo.com/30fe441f5d9f29743511f678f830f3ce.png)
-
-`Notion RSS Reader` is a web service that combines GitHub and Notion to allow you to retrieve articles from your favorite sites for free, every hour, and store them for as long as you want!
 
 <!-- Notion RSS Readerは、GitHubとNotionを組み合わせたウェブサービスで、好きなサイトの記事を無料で毎時間取得し、好きなだけ保存することができます! -->
 
