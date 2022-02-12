@@ -107,8 +107,8 @@
 ## Roadmap
 
 - [x] How to use `Notion RSS Reader`
-- [ ] Add Changelog
-- [ ] Awesome Browser UI
+- [ ] [Feedly integration](https://github.com/watsuyo/notion-rss-reader/issues/5)
+- [ ] [Awesome Browser UI](https://github.com/watsuyo/notion-rss-reader/issues/4)
 
 	etc...
 
