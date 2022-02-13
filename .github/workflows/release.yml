@@ -45,6 +45,12 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Check diff
+        uses: technote-space/get-diff-action@v6
+        with:
+          PATTERNS: |
+            **/*.(ts|js|json)
+
       - name: Set up Repository
         uses: actions/checkout@v2
         with:
@@ -60,6 +66,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add dist -f
+          git add dist
           git commit -m "chore: updated bundle"
           git push origin HEAD --force
+        if: env.GIT_DIFF
