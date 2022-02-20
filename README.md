@@ -191,6 +191,12 @@ The author has confirmed that it works with these versions.
 	NOTION_READER_DATABASE_ID=************
 	```
 
+4. Local run
+	```sh
+	yarn build
+	yarn feed
+	```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
