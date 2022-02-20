@@ -2,8 +2,7 @@ name: Feed Cron
 
 on:
   schedule:
-    # 毎日10:00, 00:00 に実行する。
-    - cron: "0 0,10 * * *" # UTC
+    - cron: "0 * * * *" # UTC
   workflow_dispatch:
 
 jobs:
