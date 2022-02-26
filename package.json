@@ -1,6 +1,10 @@
 {
 	"name": "notion-rss",
-	"version": "0.0.0",
+	"version": "0.0.1",
+	"description": "",
+	"main": "src/index.ts",
+	"repository": "git@github.com:watsuyo/notion-rss-reader.git",
+	"author": "watsuyo <watsuyo.dev@gmail.com>",
 	"private": false,
 	"license": "MIT",
 	"type": "module",
